@@ -1,7 +1,7 @@
 
 name: hello-world
 on: push
-run-name: ${{ github.run_number }} - ${{ github.action }}
+run-name: ${{ github.run_number }} - ${{ github.workflow }} by ${{ github.actor }}
 jobs:
   my-job:
     runs-on: ubuntu-latest
